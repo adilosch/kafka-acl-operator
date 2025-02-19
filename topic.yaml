@@ -1,0 +1,13 @@
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaTopic
+metadata:
+  labels:
+    app.kubernetes.io/instance: kafka
+    strimzi.io/cluster: my-cluster
+  name: mytopic
+  namespace: kafka
+spec:
+  config:
+    retention.ms: 604800000
+  partitions: 1
+  replicas: 1

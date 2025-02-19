@@ -1,0 +1,4 @@
+kopf
+confluent-kafka
+kubernetes
+

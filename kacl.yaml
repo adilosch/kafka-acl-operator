@@ -1,0 +1,10 @@
+apiVersion: kafka.acl.io/v1alpha1
+kind: KafkaACL
+metadata:
+  name: topic-acl3
+spec:
+  principal: "User:userwithoutacl"
+  topic: "mytopic"
+  operations:
+    - Read
+    - Write
